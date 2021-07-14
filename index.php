@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>FLASH SALE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="main_body">
+        <div class="heading">
+            <div class="heading-right">
+                <a class="home">Home</a>
+                <a>Service</a>
+                <a>About</a>
+                <a><a href="contact_us.php">Contact US</a>
+            </div>
+        </div>
+        <!---- main body end-->
+        <div class="logo"><img src="logo.png" height="100" width="100"></div>
+        <div class="line">FLASH SALE</div>
+        <div class="shape"><img src="shape.png" height="400" width="400"></div>
+
+        <div class="img">
+            <script language="javaScript">
+                var i = 0;
+                var path = new Array();
+                path[0] = "phone1.png";
+                path[1] = "phone2.png";
+                path[2] = "phone3.png";
+                path[3] = "phone4.png";
+                path[4] = "phone5.png";
+                function swapImage() {
+                    document.slide.src = path[i];
+                    if (i < path.length - i) i++;
+                    else i = 0;
+                    setTimeout("swapImage()", 2000);
+                }
+                window.onload = swapImage;
+            </script>
+            <img height="400" width="400" name="slide" src="phone1.png">
+        </div>
+
+        <div class="txt">
+            <p>
+                Daraz Bd Flash Sale 2021 Online In Bangladesh.<br>
+                Get Upto 80% Off On Daraz Flash Sale Deals With Cheap Prices On Selected Items.<br>
+                Buy any mobile handset in our Flash Sale Online and just in Seconds let it be yours!<br>
+                If you are looking at buying your dream mobile phone at an affordable price,<br>
+                you are at the perfect place at the perfect time.
+            </p>
+        </div>
+        <div class="reg"><a class="anchor" href="registration.php">Registration Now</div>
+    </div>
+</body>
+
+</html>
